@@ -1,0 +1,146 @@
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #590e70;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+body {
+    font-family: "Amatic SC", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px; 
+    margin: 5;
+    padding: 0;
+    background-color: #fdfbfb;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.add-to-cart {
+    font-family: "Amatic SC", serif;
+    background-color: #604caf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #6b45a0;
+}
+
+.carrito {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    background-color: rgba(174, 49, 223, 0.493);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(238, 5, 200, 0.79);
+}
+
+#carrito-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrito-items li {
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.comprar-button {
+    font-family: "Amatic SC", serif;
+    background-color: #8833ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.comprar-button:hover {
+    background-color: #11ff00;
+}
+
+.vaciar-btn {
+    font-family: "Amatic SC", serif;
+    background-color:#8833ff; 
+    color: white; 
+    border: none; 
+    padding: 12px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.vaciar-btn:hover {
+    background-color: #c0392b; 
+}
+
+.vaciar-btn:disabled {
+    background-color: #bdc3c7; 
+    cursor: not-allowed; 
+}
+
